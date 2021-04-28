@@ -1,3 +1,3 @@
 # Password-generator
-A random password generator using javascript
-<h1><b><i>View in github page: https://mannyp31.github.io/Password-generator/</i></b></h1>
+<h2>A random password generator using javascript</h2>
+<h3><b><i>View in github page: https://mannyp31.github.io/Password-generator/</i></b></h3>
