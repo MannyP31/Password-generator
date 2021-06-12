@@ -1,59 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
-
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
 }
 
 body {
-    background-color: #1f1c14;
-    color: whitesmoke;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-family: 'Original Surfer', cursive;
-    margin: 0;
     min-height: 100vh;
 }
 
 h1{
-  color: #b89a42;
-  font-style: oblique;
-  font-stretch: extra-expanded;
+  font-size: 2rem;
+  margin-top: 30px;
+  color: #4f3ff0;
   
 }
 
 .container{
-  background: #1b1602;
-  box-shadow: 0 9px 12px rgba(0, 0, 0, 0.5);
-  width: 400px;
+  padding: 10px;
+  background-color: #e9e7fd;
+  box-shadow: 2px 3px 9px grey;
+  width: 500px;
+  border-radius: 6px;
+  margin: 30px 0;
 }
 
 .header{
-  padding: 1rem;
+  padding: 20px;
 }
 
 .pword{
-  background-color: rgb(153, 153, 99);
-  color: #544304;
+  border-radius: 6px;
+  background-color: #4f3ff0;
+  color: #e9e7fd;
   display: flex;
   font-size: 1.5rem;
   align-items: center;
-  height: 70px;
-  width: 100%;
+  height: 90px;
   position: relative;
-  padding: 1rem;
-  word-break: break-all;
+  padding: 10px;
 }
 
 .pword button{
-  background-color: rgb(201, 199, 113);
+  background-color: #e9e7fd;
   border: none;
-  color: rgb(69, 24, 114);
+  color: #4f3ff0;
   cursor: pointer;
-  font-family: inherit;
-  font-weight: bold;
-  padding: 0.25rem;
+  padding: 5px;
   position: absolute;
   top: 0;
   right: 0;
@@ -68,27 +65,66 @@ h1{
 }
 
 .pword__body{
-  padding: 0 1rem 1rem;
+  padding: 0 20px;
+}
+
+.label {
+  font-size: 1rem;
 }
 
 .form-control {
-  color: rgb(186, 192, 97);
+  color: #4f3ff0;
   display: flex;
   justify-content: space-between;
   margin: 0.75rem 0;
 }
 
 .generate {
-  background-color: #b3b00c;
-  border: black;
-  color: #201f1a;
+  background-color: transparent;
+  border: 2.5px solid #4f3ff0;
+  color: #4f3ff0;
+  border-radius: 5px;
   cursor: pointer;
-  display: block;
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 0.75rem;
-  margin-top: 1rem;
-  font-style: italic;
+  font-size: 1.3rem;
+  padding: 15px 20px;
+  margin-top: 20px;
   width: 100%;
+  margin-bottom: 20px;
+}
 
+.generate:hover {
+  box-shadow: 1px 2px 8px grey;
+  background-color: #4f3ff0;
+  color: #e9e7fd;
+  transition: 0.8s;
+}
+
+@media (max-width: 550px) {
+  .container {
+    width: 400px;
+  }
+}
+
+@media (max-width:  450px) {
+  .container {
+    width: 85vw;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .generate {
+    font-size: 1rem;
+  }
+  .pword {
+    font-size: 1.2rem;
+  }
+  .pword__body {
+    padding: 0 10px;
+  }
+  .header {
+    padding: 10px;
+  }
+  .label {
+    font-size: 0.9rem;
+  }
 }

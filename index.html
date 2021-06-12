@@ -3,10 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <title>Password Generator</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+
   <h1>Password Generator</h1>
   <div class="container">
     <div class="header">
@@ -17,23 +25,23 @@
     </div>
     <div class="pword__body">
       <div class="form-control">
-        <label for="len">>.Password Length</label>
-        <input id="len" value="15" type="number" min="2" max="30" />
+        <label class="label" for="len">Password Length</label>
+        <input id="len" value="15" type="number" min="2" max="25" />
       </div>
       <div class="form-control">
-          <label for="upper">>.Contain Uppercase Letters</label>
+          <label class="label" for="upper">Contain Uppercase Letters</label>
           <input id="upper" type="checkbox" />
       </div>
       <div class="form-control">
-          <label for="lower">>.Contain Lowercase Letters</label>
+          <label class="label" for="lower">Contain Lowercase Letters</label>
           <input id="lower" type="checkbox" />
       </div>
       <div class="form-control">
-          <label for="number">>.Contain Numbers</label>
+          <label class="label" for="number">Contain Numbers</label>
           <input id="number" type="checkbox" />
       </div>
       <div class="form-control">
-          <label for="symbol">>.Contain Symbols</label>
+          <label class="label" for="symbol">Contain Symbols</label>
           <input id="symbol" type="checkbox" />
       </div>
       <button class="generate" id="generate">
@@ -41,6 +49,9 @@
       </button>
     </div>
   </div>
+
+  <!-- JS Scripts -->
   <script src="app.js"></script>
+
 </body>
 </html>
